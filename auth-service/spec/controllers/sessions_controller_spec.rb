@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe SessionsController, type: :request do
 
-  let (:user) { create_user }
+  let (:user) { FactoryBot.create(:user) }
   let (:login_url) { '/login' }
   let (:logout_url) { '/logout' }
 

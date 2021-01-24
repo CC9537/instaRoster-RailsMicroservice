@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe RegistrationsController, type: :request do
-  let (:user) { build_user }
-  let (:existing_user) { create_user }
+  let (:user) { FactoryBot.build(:user) }
+  let (:existing_user) { FactoryBot.create(:user) }
   let (:signup_url) { "/signup" }
 
   context "When creating a new user" do

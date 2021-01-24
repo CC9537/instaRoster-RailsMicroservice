@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe UsersController, type: :request do
 
-  let (:user) { create_user }
+  let (:user) { FactoryBot.create(:user) }
 
   context 'When fetching a user' do
     before do
